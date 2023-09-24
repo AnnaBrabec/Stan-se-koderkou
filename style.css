@@ -1,0 +1,154 @@
+/*Barvy: #0C4A60
+         h1: #EF6C33
+         body: #ABDFF1
+         #E1DDDB
+*/
+body {
+    background-color: #ABDFF1;
+}
+h1 {
+    color: #EF6C33;
+}
+
+h2 {
+    color: #0C4A60;
+}
+
+h3 {
+    color: #0C4A60;
+}
+header {
+    padding-left: 15%;
+}
+header li {
+    list-style-type: none;
+    display: inline;
+    text-align: left;
+    color: #EF6C33;
+}
+
+header a {
+    text-decoration: none;
+    color: #EF6C33;
+}
+
+.zvýraznění {
+    background-color: #EF6C33;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+}
+.main {
+    background-color: #E1DDDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.main img {
+    height: auto;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxy {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 70%;
+}
+.box1 {
+    background-color: #E1DDDB;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box2 {
+    background-color: #E1DDDB;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box1 li {
+    list-style-type: none;
+}
+
+.box2 li {
+    list-style-type: none;
+}
+
+footer {
+    padding-left: 15%;
+}
+
+@media screen and (min-width: 481px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .main img {
+        border-radius: 15px;
+        min-height: 252.1px;
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .kontakt {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+        width: 60%;
+        margin: auto;
+    }
+
+    .zvýraznění {
+        margin: 0;
+    }
+
+    .boxy {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-bottom: 20px;
+    }
+
+    .box1 {
+        width: 49%;
+    }
+    .box2 {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .boxy {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box1 {
+        justify-content: center;
+        width: 32%;
+    }
+
+    .box2 {
+        justify-content: center;
+        width: 32%;
+    }
+}
